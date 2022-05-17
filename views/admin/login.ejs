@@ -1,0 +1,19 @@
+<div class="min-h-screen bg-gray-100 flex items-center">
+	<div class="container mx-auto max-w-md shadow-md hover:shadow-lg transition duration-300">
+		<form action="/api/admin/login" method="POST" class="py-12 p-10 bg-white rounded-xl">
+			<div class="mb-6">
+				<label class="mr-4 text-gray-700 font-bold inline-block mb-2" for="email">Email</label>
+				<input name="email" type="text" class="border bg-gray-100 py-2 px-4 w-96 outline-none focus:ring-2 focus:ring-indigo-400 rounded" placeholder="example@example.com" />
+			</div>
+			<div class="">
+				<label class="mr-4 text-gray-700 font-bold inline-block mb-2" for="password">Password</label>
+				<input name="password" type="password" class="border bg-gray-100 py-2 px-4 w-96 outline-none focus:ring-2 focus:ring-indigo-400 rounded" />
+			</div>
+			<div>
+				<input type="checkbox" name="remember" id="" class="mr-4 text-gray-700 font-bold inline-block mb-2" />
+				<span class="text-sm text-gray-700 inline-block mt-4">remember me</span>
+			</div>
+			<button class="w-full mt-6 text-indigo-50 font-bold bg-indigo-600 py-3 rounded-md hover:bg-indigo-500 transition duration-300 uppercase">Login</button>
+		</form>
+	</div>
+</div>

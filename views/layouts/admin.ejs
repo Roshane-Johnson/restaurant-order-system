@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<%- include("../partials/imports") %> <% include %>
+<title>Orderinator - <%= page_title %></title>
+
+<main class="flex">
+	<section class="navbar h-screen sticky w-[15%] px-5 bg-white">
+		<div class="py-5 border-b-2 border-gray-200">
+			<h1 class="text-center font-bold text-slate-700"><%= locals.app_name || "Orderinator" %> Dashboard</h1>
+		</div>
+		<div class="grid h-5/6">
+			<ul class="text-sm">
+				<li class="block py-3 px-4 rounded-md my-3 bg-blue-500 text-white"><a class="" href="/admin/orders">Orders</a></li>
+				<li class="block py-3 px-4 rounded-md my-3"><a class="" href="/admin/accounts">Accounts</a></li>
+				<li class="block py-3 px-4 rounded-md my-3"><a class="" href="/admin/orders/manage">Manage Orders</a></li>
+				<li class="block py-3 px-4 rounded-md my-3"><a class="" href="/admin/accounts/manage">Manage Accounts</a></li>
+			</ul>
+			<a class="block self-end text-slate-700 p-2 rounded" href="/admin/logout">Logout <span>→</span></a>
+		</div>
+	</section>
+	<section class="content h-screen overflow-y-scroll w-[85%] bg-gray-200 relative"><%- body %></section>
+</main>
